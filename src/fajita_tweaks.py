@@ -22,8 +22,12 @@ class Tweaks():
   def moduleState():
     return 'Python Module Imported'
 
+  def readState():
+    with open('/proc/touchpanel/double_tap_enable', mode='r') as f:
+      return f.read()
+
   def doubleTap(option):
-    os.system('echo %s > /proc/touchpanel/double_tap_enable' % option)
-    return option
+    with open('/proc/touchpanel/double_tap_enable', mode='w') as f:
+      f.write(option)
 
 tweaks = Tweaks()

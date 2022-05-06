@@ -30,6 +30,8 @@ MainView {
     width: units.gu(45)
     height: units.gu(75)
 
+    property bool is_doubleTap_enabled
+
     Page {
         anchors.fill: parent
 
@@ -47,30 +49,24 @@ MainView {
                 Layout.preferredWidth: parent.width
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: i18n.tr("You need to push one of the buttons after each reboot. It's not permanent a mod.")
+                text: i18n.tr("Click the switch to enable/disable the double tap. It's not permanent a mod.")
             }
 
             Item{height: units.gu(4)}
 
-            QQC2.Button{
+            QQC2.Switch{
+                id: doubleTap_state_switch
                 Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Enable Double Tap")
+                checked: root.is_doubleTap_enabled
                 onClicked:{
-                    python.call('fajita_tweaks.Tweaks.doubleTap',["1"], function(returnValue) {})
+                    if(root.is_doubleTap_enabled){
+                        python.call('fajita_tweaks.Tweaks.doubleTap',["0"], function(returnValue) {})
+                    } else{
+                        python.call('fajita_tweaks.Tweaks.doubleTap',["1"], function(returnValue) {})
+                    }
                 }
             }
 
-            Item{height: units.gu(4)}
-
-            QQC2.Button{
-                Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Disable Double Tap")
-                onClicked:{
-                    python.call('fajita_tweaks.Tweaks.doubleTap',["0"], function(returnValue) {})
-                }
-            }
-
-        
         }
     }
 
@@ -80,8 +76,8 @@ MainView {
         Component.onCompleted: {
             addImportPath(Qt.resolvedUrl('../src/'));
             importModule('fajita_tweaks', function() {
-                python.call('fajita_tweaks.Tweaks.moduleState', [] ,function(returnValue){
-                    console.log(returnValue)
+                python.call('fajita_tweaks.Tweaks.readState', [] ,function(returnValue){
+                    root.is_doubleTap_enabled = (returnValue == 1 ? true : false)
             })
             });
         }
