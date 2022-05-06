@@ -1,5 +1,6 @@
 {
-    "template": "unconfined",
     "policy_groups": [],
+    "read_path": ["/proc/touchpanel/double_tap_enable"],
+    "write_path": ["/proc/touchpanel/double_tap_enable"],
     "policy_version": 16.04
 }
