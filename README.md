@@ -2,6 +2,19 @@
 
 This app runs unconfined and it was only tested on OnePlus 6T. Allows to disable/enable double tap feature.
 
+### Debug in Desktop Mode
+
+Run debug build in Desktop Mode:
+
+    clickable desktop
+
+
+### Build
+
+Run build command:
+
+    clickable build -a arm64
+
 ## License
 
 Copyright (C) 2022  Ivo Xavier
