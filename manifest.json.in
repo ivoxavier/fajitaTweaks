@@ -1,0 +1,15 @@
+{
+    "name": "fajitatweaks.ivoxavier",
+    "description": "This app runs unconfined and it was only tested on OnePlus 6T. Allows to disable/enable double tap feature.",
+    "architecture": "@CLICK_ARCH@",
+    "title": "fajitaTweaks",
+    "hooks": {
+        "fajitatweaks": {
+            "apparmor": "fajitatweaks.apparmor",
+            "desktop":  "fajitatweaks.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Ivo Xavier <ivofernandes12@gmail.com>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

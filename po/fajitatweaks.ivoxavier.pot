@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the fajitatweaks.ivoxavier package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fajitatweaks.ivoxavier\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-06 15:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/Main.qml:38 fajitatweaks.desktop.in.h:1
+msgid "fajitaTweaks"
+msgstr ""
+
+#: ../qml/Main.qml:50
+msgid ""
+"You need to push one of the buttons after each reboot. It's not permanent a "
+"mod."
+msgstr ""
+
+#: ../qml/Main.qml:57
+msgid "Enable Double Tap"
+msgstr ""
+
+#: ../qml/Main.qml:67
+msgid "Disable Double Tap"
+msgstr ""
