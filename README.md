@@ -13,7 +13,7 @@ Run debug build in Desktop Mode:
 
 Run build command:
 
-    clickable build -a arm64
+    clickable build
 
 ## License
 
