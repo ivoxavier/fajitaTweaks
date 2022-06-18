@@ -1,0 +1,29 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the fajitatweaks.ivoxavier package.
+#
+# Heimen Stoffels <vistausss@fastmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: fajitatweaks.ivoxavier\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-06 18:51+0000\n"
+"PO-Revision-Date: 2022-06-18 13:49+0200\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.04.2\n"
+
+#: ../qml/Main.qml:40 fajitatweaks.desktop.in.h:1
+msgid "fajitaTweaks"
+msgstr "Fajita-afstellingen"
+
+#: ../qml/Main.qml:52
+msgid ""
+"Click the switch to enable/disable the double tap. It's not permanent a mod."
+msgstr ""
+"Druk op de schakelaar om dubbeltikken in of uit te schakelen; de keuze is"
+" niet definitief."
